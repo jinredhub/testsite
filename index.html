@@ -106,7 +106,7 @@
         3. choolse WIDGET TYPE
    -->
 
-  <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=88192&type=standard&theme=tall&iframe=true&overlay=false&domain=com&lang=en-US'></script>
+  <script class='lazyload' type='text/javascript' data-script='//www.opentable.com/widget/reservation/loader?rid=88192&type=standard&theme=tall&iframe=true&overlay=false&domain=com&lang=en-US'></script>
 
   <h1>yelp</h1>
   <p>need to login to get the code: <a href="https://www.yelp-support.com/article/How-do-I-allow-Yelp-Reservations-booking-from-my-business-s-website?l=en_US">link</a></p>
@@ -138,7 +138,16 @@
   <p>paypal button <a href="https://youtu.be/ZRW3x0NHA1Q"></a></p>
 
   <!-- lazysizes -->
+  <script>
+    window.lazySizesConfig = window.lazySizesConfig || {};
+    window.lazySizesConfig.init = false;
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.8/lazysizes.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.8/plugins/unveilhooks/ls.unveilhooks.min.js"></script>
+  <script>
+    lazySizes.init();
+  </script>
+  <!-- --------------------------------------------- -->
 
 	<script>
   $('document').ready(function(){
